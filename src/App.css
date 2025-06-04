@@ -1,0 +1,220 @@
+html,
+body {
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 100vw;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  margin: 50px auto;
+  border-radius: 8px;
+  padding: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  color: #333;
+}
+.subtitle {
+  color: rgba(100, 100, 100, 0.6);
+  font-weight: 500;
+  font-size: large;
+}
+
+.form {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.input {
+  /* flex: 1; */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 500px;
+  max-width: 90vw;
+}
+
+.editInput {
+  /* flex: 1; */
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  outline: none;
+  width: 100%;
+}
+
+.addButton {
+  padding: 7px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* ensure list takes full width */
+  max-width: 400px;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.empty {
+  color: #666;
+  text-align: center;
+}
+
+.listItem {
+  background-color: #f9f9f9;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+  gap: 1rem;
+  width: 100%;
+}
+
+.listItem.completed {
+  opacity: 0.6;
+  gap: 1rem;
+}
+
+.leftSection {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.label {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  color: black;
+}
+
+.checkbox {
+  margin-right: 12px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.todoText {
+  font-size: 16px;
+  color: #333;
+}
+
+.todoText.completed {
+  text-decoration: line-through;
+}
+
+.deleteButton {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  color: #dc3545;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.editButton {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  color: blue;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+.saveButton {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  color: #28a745;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 20px 0px;
+    margin: 20px auto;
+  }
+
+  .form {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  .editInput {
+    width: 100%;
+    max-width: 150px;
+  }
+
+  .addButton {
+    width: 100%;
+    max-width: 100px;
+    justify-content: center;
+  }
+
+  .listItem {
+    padding: 8px 12px;
+  }
+
+  .todoText {
+    white-space: normal;
+  }
+}
