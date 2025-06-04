@@ -19,7 +19,7 @@ A clean and minimalistic Todo List application built with **React**, **TypeScrip
 
 ## Clone the repo
 
-- git clone https://github.com/your-username/todo-app.git
+- git clone https://github.com/rishav16-9/Todo-app.git
 
 ## Install dependencies
 
